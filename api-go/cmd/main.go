@@ -1,7 +1,7 @@
 package main
 
 import (
-	bookkeep "BookKeep/internal/app/book-keep"
+	bookkeep "BookKeep/internal/app"
 	"log/slog"
 	"os"
 )
