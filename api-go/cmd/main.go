@@ -1,16 +1,9 @@
 package main
 
 import (
-	bookkeep "BookKeep/internal/app"
-	"log/slog"
-	"os"
+	"BookKeep/internal/app"
 )
 
 func main() {
-	s := bookkeep.NewBookKeep()
-
-	if err := s.Start(); err != nil {
-		slog.Error("failed to start book keep", "error", err)
-		os.Exit(1)
-	}
+	app.Run()
 }
